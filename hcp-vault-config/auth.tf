@@ -14,7 +14,7 @@ resource "vault_generic_endpoint" "u1" {
   data_json = <<EOT
 {
   "policies": ["default"],
-  "password": ${var.consul_operator_pwd},
+  "password": "${var.consul_operator_pwd}",
   "token_ttl": "1h"
 }
 EOT

@@ -122,7 +122,7 @@ EOT
 resource "vault_identity_oidc_provider" "oidc_provider" {
   name          = "vault-oidc"
   https_enabled = true
-  issuer_host   = "hcp-vault-demo.vault.5bbc50e3-a284-4743-877e-ffd388d684f2.aws.hashicorp.cloud:8200"
+  issuer_host   = "hcp-vault-demo.private.vault.5bbc50e3-a284-4743-877e-ffd388d684f2.aws.hashicorp.cloud:8200"
   allowed_client_ids = [
     vault_identity_oidc_client.consul.client_id
   ]
